@@ -37,7 +37,7 @@ const Login = () => {
       if (data.status === 200) {
         auth.login(authData);
 
-        navigate("/dashboard");
+        navigate("/home");
       } else if (data.status === 403) {
         setPasswordInput("");
         alert(data.message);

@@ -108,7 +108,7 @@ const Signup = () => {
         if (data.status === 200) {
           auth.login(authData);
 
-          navigate("/dashboard");
+          navigate("/home");
         } else if (data.status === 403) {
           alert(data.message);
         }

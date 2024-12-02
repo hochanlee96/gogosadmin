@@ -1,7 +1,7 @@
 export const API_Login = async (body) => {
   try {
     const response = await fetch(
-      process.env.REACT_APP_BACKEND_URL + "/tutors/login",
+      process.env.REACT_APP_BACKEND_URL + "/admins/login",
       {
         method: "POST",
         body: JSON.stringify(body),
@@ -20,7 +20,7 @@ export const API_Login = async (body) => {
 export const API_CheckEmailExists = async (email) => {
   try {
     const response = await fetch(
-      process.env.REACT_APP_BACKEND_URL + `/tutors/email-exists?email=${email}`,
+      process.env.REACT_APP_BACKEND_URL + `/admins/email-exists?email=${email}`,
       {
         method: "GET",
         headers: {
@@ -38,7 +38,7 @@ export const API_CheckEmailExists = async (email) => {
 export const API_Signup = async (body) => {
   try {
     const response = await fetch(
-      process.env.REACT_APP_BACKEND_URL + "/tutors/signup",
+      process.env.REACT_APP_BACKEND_URL + "/admins/signup",
       {
         method: "POST",
         body: JSON.stringify(body),
