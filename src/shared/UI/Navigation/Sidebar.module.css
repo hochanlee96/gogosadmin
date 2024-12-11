@@ -1,0 +1,25 @@
+.NavigationBlock {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  align-items: center;
+}
+
+.Navigation ul {
+  list-style: none;
+}
+
+.Navigation a {
+  border: 1px solid transparent;
+  color: #292929;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.Navigation a:hover {
+  font-weight: bold;
+}
+
+.NavlinkActive {
+  font-weight: bold;
+}
